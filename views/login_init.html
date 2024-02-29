@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Options</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #1a1a1a;
+            color: #fff;
+        }
+        .login-container {
+            text-align: center;
+            background-color: #333;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+            max-width: 400px; /* Adjusted for image */
+        }
+        .login-container img {
+            max-width: 100%; /* Make image responsive */
+            height: auto;
+            border-radius: 10px; /* Rounded edges for the image */
+            margin-bottom: 20px; /* Space between image and text */
+        }
+        .login-option {
+            display: inline-block;
+            width: 250px;
+            padding: 15px 20px;
+            margin: 20px auto;
+            font-size: 18px;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        .login-option:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <img src="/public/images/metro.jpeg" alt="Metro Rail">
+        <h2>Select Your Login Type</h2>
+        <button class="login-option" onclick="location.href='/login_user'">Login As User</button>
+        <button class="login-option" onclick="location.href='/admin_login'">Login As Admin</button>
+    </div>
+</body>
+</html>
